@@ -1,0 +1,128 @@
+body{
+  background-color: #FFFFFF;
+}
+
+.Jollof{
+  border-radius: 8px;
+  max-width: 80%;
+  height: auto;
+  cursor: pointer;
+}
+
+.MyRecipe{
+  border-radius: 8px;
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+
+.ApplePie{
+  border-radius: 8px;
+  max-width: 30%;
+  height: auto;
+  cursor: pointer;
+}
+
+.feijoada{
+  border-radius: 8px;
+  max-width: 30%;
+  height: auto;
+  cursor: pointer;
+}
+
+.sangria{
+  border-radius: 8px;
+  max-width: 30%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 500px) {
+  .meal-search-box{
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 750px) {
+  #meal{
+    display: grid;
+    grid-auto-columns: 3, 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+  .meal-item{
+    margin: 0;
+  }
+
+
+@media only screen and (min-width: 1px) {
+  #meal{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Book img{
+    width: 180px;
+    animation: book 7s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+.Book{
+  widows: 100%;
+
+  bottom: 70px;
+}
+
+  @keyframes book{
+  0%{
+     transform: translateY(0);
+     opacity: 0;
+
+   }
+   50%{
+
+      opacity: 1;
+
+    70%{
+
+      opacity: 1;
+
+    }
+    100%{
+      transform: translateY(-80vh);
+      opacity: 0;
+     }
+
+ }
+
+ .Book img:nth-child(1){
+   animation-delay: 2s;
+ }
+
+ .Book img:nth-child(2){
+   animation-delay: 1s;
+ }
+
+ .Book img:nth-child(3){
+   animation-delay: 3s;
+ }
+
+ .Book img:nth-child(4){
+   animation-delay: 4.5s;
+ }
+
+ .Book img:nth-child(5){
+   animation-delay: 2s;
+ }
+
+ .Book img:nth-child(6){
+   animation-delay: 26;
+ }
+
+ .Book img:nth-child(7){
+   animation-delay: 7s;
+ }
